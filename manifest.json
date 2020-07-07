@@ -1,0 +1,23 @@
+{
+    "version": "1.0", 
+    "manifest_version": 2, 
+    "name": "Meet Party",  
+    "description": "Celebrate with friends on Google Meet", 
+    "author": "Ananya",
+
+    "content_scripts": [
+        {
+          "matches": ["https://meet.google.com/*"],
+          "css": ["styles.css"]
+        }
+      ],
+      "permissions": [
+        "activeTab"
+      ],
+      "web_accessible_resources": [
+        "assets/*"
+      ],
+      "browser_action": {
+        "default_popup": "popup.html"
+    }
+}

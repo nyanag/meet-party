@@ -1,0 +1,23 @@
+/* body{
+    background-color: aqua;
+} */
+/* .vgJExf{
+    background-color: aqua;
+    mix-blend-mode: difference;
+} */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    /*You can use any kind of background here.*/
+    background: transparent;
+  }
+  
+  canvas {
+    display: block;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+  }
