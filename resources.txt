@@ -1,2 +1,6 @@
 https://codepen.io/n33kos/pen/gjVQwv
 https://gist.github.com/greatghoul/8120275
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts
+https://gist.github.com/akirattii/2f55bb320f414becbc42bbe56313a28b
+https://stackoverflow.com/questions/26156978/sending-message-from-content-script-to-background-script-breaks-chrome-extension
+https://stackoverflow.com/questions/31028259/chrome-tabs-executescript-thows-error-unchecked-runtime-lasterror-while-running

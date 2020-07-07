@@ -1,4 +1,5 @@
-console.log("CELEBRATE! ")
+// console.log("CELEBRATE! ")
+console.log("%cCelebrate",        "color:blue;font-family:system-ui;font-size:2rem;-webkit-text-stroke: 1px black;font-weight:bold")
 var x = document.createElement("CANVAS");
 x.setAttribute('id','canvas')
 // var ctx = x.getContext("2d");
@@ -14,6 +15,7 @@ x.setAttribute('id','canvas')
 // }
 // img.src = url('chrome-extension://__MSG_@@extension_id__/assets/discoball.png');
 
+var crn = document.getElementById('celebratern');
 
 canvas = document.getElementById('canvas')
 ctx = x.getContext("2d");
@@ -23,11 +25,11 @@ cx = ctx.width/2;
 cy = ctx.height/2;
 
 var confetti = [];
-const confettiCount = 300;
-const gravity = 0.5;
-const terminalVelocity = 5;
-const drag = 0.075;
-const colors = [
+var confettiCount = 300;
+var gravity = 0.5;
+var terminalVelocity = 5;
+var drag = 0.075;
+var colors = [
   { front : 'red', back: 'darkred'},
   { front : 'green', back: 'darkgreen'},
   { front : 'blue', back: 'darkblue'},
@@ -115,14 +117,19 @@ render = () => {
   // Fire off another round of confetti
   // if (confetti.length <= 10) initConfetti();
 
+  crn.addEventListener('click', function(){
+    console.log('anotha one!')
+    initConfetti();
+  })
+
   window.requestAnimationFrame(render);
 }
 
 //---------Execution--------
-for (i=0;i<3;i++){
+// for (i=0;i<3;i++){
   initConfetti();
   render();
-}
+// }
 
 
 //----------Resize----------
@@ -134,5 +141,6 @@ window.addEventListener('resize', function () {
 // window.addEventListener('click', function() {
 //   initConfetti();
 // });
+
 
 document.body.appendChild(x);
