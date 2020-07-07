@@ -5,10 +5,16 @@
     "description": "Celebrate with friends on Google Meet", 
     "author": "Ananya",
 
-    "content_scripts": [
+    "background": 
+    {
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [  
         {
           "matches": ["https://meet.google.com/*"],
-          "css": ["styles.css"]
+          "css": ["styles.css"],
+          "js" : ["contentScript.js"]
         }
       ],
       "permissions": [

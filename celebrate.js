@@ -22,7 +22,7 @@ x.height = window.innerHeight;
 cx = ctx.width/2;
 cy = ctx.height/2;
 
-let confetti = [];
+var confetti = [];
 const confettiCount = 300;
 const gravity = 0.5;
 const terminalVelocity = 5;
