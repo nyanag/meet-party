@@ -26,6 +26,12 @@
         "assets/*"
       ],
       "browser_action": {
+        "default_icon": {
+          "16": "assets/iconp.png",
+          "48": "assets/iconp.png"
+        },
         "default_popup": "popup.html"
-    }
+    },
+    "icons": { 
+     "128": "/assets/iconf.png" }
 }
