@@ -32,10 +32,10 @@ Click on it and celebrate!
   <img width=800 src="/assets/preview1.png">
 </p>
 
-#Contributing
+# Contributing
 I'd love for you to contribute to this project! Feel free to add a PR
 
-#Inspiration 
+# Inspiration 
 I was inspired by a recent meetup with my school friends and wanted to add an exciting visual to all the fun we had.
 I built this project over the weekend, and learnt quite a bit about Chrome Extensions.
 
