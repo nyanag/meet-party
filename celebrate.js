@@ -1,5 +1,5 @@
 // console.log("CELEBRATE! ")
-console.log("%cCelebrate",        "color:blue;font-family:system-ui;font-size:2rem;-webkit-text-stroke: 1px black;font-weight:bold")
+console.log("%cCelebrate", "color:blue;font-family:system-ui;font-size:2rem;-webkit-text-stroke: 1px black;font-weight:bold")
 var x = document.createElement("CANVAS");
 x.setAttribute('id','canvas')
 // var ctx = x.getContext("2d");
@@ -117,10 +117,11 @@ render = () => {
   // Fire off another round of confetti
   // if (confetti.length <= 10) initConfetti();
 
-  crn.addEventListener('click', function(){
-    console.log('anotha one!')
-    initConfetti();
-  })
+  // crn.addEventListener('click', function(){
+  //   console.log('anotha one!')
+  //   initConfetti();
+  // })
+  
 
   window.requestAnimationFrame(render);
 }
@@ -144,3 +145,4 @@ window.addEventListener('resize', function () {
 
 
 document.body.appendChild(x);
+canvas.parentNode.removeChild(canvas)
