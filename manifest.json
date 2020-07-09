@@ -18,7 +18,7 @@
         }
       ],
       "permissions": [
-        "*://*/*"
+        "https://meet.google.com/*"
       ],
       "web_accessible_resources": [
         "assets/*"
